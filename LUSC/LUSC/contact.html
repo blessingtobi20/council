@@ -38,6 +38,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="sweetalert2.min.css" />
   </head>
 
   <body>
@@ -144,6 +145,7 @@
         name="access_key"
         value="e94bc81c-0209-408b-8f7b-835ccb9587bb"
       />
+      <input type="hidden" name="redirect" value="" />
       <div class="container-xxl py-5">
         <div class="container">
           <div class="row g-5">
@@ -161,6 +163,7 @@
                         class="form-control"
                         id="name"
                         placeholder="Your Name"
+                        autocomplete="off"
                       />
                       <label for="name">Your Name</label>
                     </div>
@@ -172,6 +175,7 @@
                         class="form-control"
                         id="email"
                         placeholder="Your Email"
+                        autocomplete="off"
                       />
                       <label for="email">Your Email</label>
                     </div>
@@ -183,6 +187,7 @@
                         class="form-control"
                         id="subject"
                         placeholder="Subject"
+                        autocomplete="off"
                       />
                       <label for="subject">Subject</label>
                     </div>
@@ -199,7 +204,11 @@
                     </div>
                   </div>
                   <div class="col-12">
-                    <button class="btn btn-primary py-3 px-4" type="submit">
+                    <button
+                      class="btn btn-primary py-3 px-4"
+                      type="submit"
+                      onsubmit=""
+                    >
                       Send Message
                     </button>
                   </div>
@@ -327,5 +336,17 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="LUSC\sweetalert2@11.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script>
+      function submitForm(form) {
+        swal({
+          title: "Submission",
+          text: "Thanks for contacting us",
+          icon: "success",
+          button: true,
+        });
+      }
+    </script>
   </body>
 </html>
