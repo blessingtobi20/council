@@ -139,7 +139,7 @@
 
     <!-- Contact Start -->
 
-    <form action="https://api.web3forms.com/submit" method="POST">
+    <form action="https://api.web3forms.com/submit" method="POST" id="form">
       <input
         type="hidden"
         name="access_key"
@@ -175,7 +175,6 @@
                         class="form-control"
                         id="email"
                         placeholder="Your Email"
-                        autocomplete="off"
                       />
                       <label for="email">Your Email</label>
                     </div>
@@ -204,11 +203,7 @@
                     </div>
                   </div>
                   <div class="col-12">
-                    <button
-                      class="btn btn-primary py-3 px-4"
-                      type="submit"
-                      onsubmit=""
-                    >
+                    <button class="btn btn-primary py-3 px-4" type="submit">
                       Send Message
                     </button>
                   </div>
@@ -238,6 +233,7 @@
           </div>
         </div>
       </div>
+      <div id="result"></div>
     </form>
 
     <!-- Contact End -->
