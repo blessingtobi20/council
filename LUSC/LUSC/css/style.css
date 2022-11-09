@@ -535,6 +535,7 @@ h6,
   color: #1ed33c;
   font-size: 18px;
   line-height: 1;
+  justify-content: space-between;
 }
 
 #footer .footer-top .footer-links ul li {
@@ -550,6 +551,7 @@ h6,
 #footer .footer-top .footer-links ul a {
   color: rgba(255, 255, 255, 0.6);
   transition: 0.3s;
+  justify-content: space-between;
   display: inline-block;
   line-height: 1;
 }
